@@ -4,7 +4,15 @@
   <input type="button" value="書換" onClick="disp()"></form></body>
   <script type="text/javascript">
     function disp() {
-    document.getElementById("target").innerHTML = "Hi, DevOps 2nd.";
+      var text = doucment.getElementById("target").innerHTML;
+      if (text === 'Hello, DevOps 1st deploy.')
+      {
+        document.getElementById("target").innerHTML = "Hi, DevOps 2nd.";
+      }
+      else
+      {
+        document.getElementById("target").innerHTML = "Hello, DevOps 1st deploy.";
+      }
     }
     </script>
 </html>
